@@ -1,0 +1,152 @@
+@-webkit-keyframes Point{
+    0%{
+        font-size: 25px;
+        opacity: 0;
+    }
+    100%{
+        font-size:12px;
+        opacity: 1;
+    }
+}
+@keyframes Point{
+    0%{
+        font-size: 25px;
+        opacity: 0;
+    }
+    100%{
+        font-size:12px;
+        opacity: 1;
+    }
+}
+*{
+    transition: all 500ms ease;
+}
+body{
+    background-image: linear-gradient(113.72151156804875deg, rgba(50, 55, 98,1) 5.736111111111111%,rgba(38, 32, 97,1) 96.29166666666666%);
+    height: 100vh;
+}
+section{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 0;
+    margin-top: 35px;
+}
+h2{
+    text-align: center;
+    font-size: 15px;
+    color: #ED1;
+    font-weight: 100;4
+    animation: Point 1s;
+}
+.start, .addPt{
+    display: block;
+    margin: 0 auto;
+}
+.players{
+    display: flex;
+    flex:10;
+    justify-content: space-around;
+    color: #fff;
+}
+button{
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    color: #f2f2f2;
+    background-color: rgba(216, 43, 38, .8);
+}
+button:hover{
+    background-color: rgba(216, 43, 38, .9);
+}
+.score{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .1);
+    text-align: center;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.player1, .player2{
+    display: flex;
+    flex-direction: column;
+}
+.points{ 
+    -webkit-animation: Point 1s linear; 
+            animation: Point 1s linear;
+    font-size: 25px;
+    height: 45px;
+    width: 35px;
+ }
+ .draw{
+    color: #BC3;
+    font-size: 20px;
+ }
+ .players{
+    display: flex;
+ }
+ .players > *{
+    flex: 1;
+    align-items: center;
+ }
+ .points{
+    text-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+ }
+ .player{
+    height: 250px;
+    display: flex;
+    text-transform: uppercase;
+ }
+ .result{
+    color: green;
+    font-size: 20px;
+ }
+ .failed{
+    color: red;
+ }
+ .won{
+    color: green;
+ }
+ .reset{
+    display: block;
+    margin: 0 auto;
+ }
+ .information{
+    background-color: rgba(148, 106, 142, .1);
+    margin: 5% 15%;
+    padding: 25px;
+    position: relative;
+ }
+ .information::before{
+    content: "i";
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    height: 35px;
+    width: 35px;
+    top: -17.5px;
+    background-color:#A23939FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+
+ }
+ 
+.hidden{
+    display: none;
+}
